@@ -8,7 +8,8 @@
 
 int main(void)
 {
-	char putchar("and that piece of art is useful\" - Dora Korpar, 2015-10-19\n");
+	string s="and that piece of art is useful\" - Dora Korpar, 2015-10-19\n";
+	int putchar(int s);
 	return (1);
 }
 
