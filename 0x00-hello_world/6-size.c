@@ -7,13 +7,9 @@
 
 int main(void)
 {
-	printf("char is %ld bytes\n", sizeof(char));
-	printf("int is %ld bytes\n", sizeof(int));
-	printf("float is %ld bytes\n", sizeof(float));
-	printf("long is %ld bytes\n", sizeof(long));
-	printf("unsigned char is %ld bytes\n", sizeof(unsigned char));
-	printf("unsigned int is %ld bytes\n", sizeof(unsigned int));
-	printf("unsigned float is %ld bytes\n", sizeof(unsigned float));
-	printf("unsigned long is %ld bytes\n", sizeof(unsigned long));
+	printf("char is %zu bytes\n", sizeof(char));
+	printf("int is %zu bytes\n", sizeof(int));
+	printf("float is %zu bytes\n", sizeof(float));
+	printf("double is %zu bytes\n", sizeof(double));
 	return (0);
 }
