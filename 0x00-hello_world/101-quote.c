@@ -8,6 +8,8 @@
 
 int main(void)
 {
-	fprintf(stderr, "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n");
+	char[20] s1 = "and that piece of art is useful\" ";
+	char[20] s2 = "- Dora Korpar, 2015-10-19";
+	fprintf(stderr, s1 + s2\n);
 	return (1);
 }
