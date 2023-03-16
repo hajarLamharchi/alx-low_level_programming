@@ -12,7 +12,6 @@ int main(void)
 	char s1[100] = "and that piece of art is useful\" ";
 	char s2[100] = "- Dora Korpar, 2015-10-19";
 
-	strcat(s1, s2);
-	fprintf(stderr, s1);
+	fprintf(stderr, strcat(s1, s2));
 	return (1);
 }
