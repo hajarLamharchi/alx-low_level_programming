@@ -8,14 +8,14 @@
 int main(void)
 {
 	int i = 0;
+	int a = 9;
 
 	while (i <= 8)
 	{
 		putchar(i + '0');
 		putchar(',');
 		putchar(' ');
-		putchar('9');
 	}
-	putchar('\n');
+	putchar(a + '\n');
 	return (0);
 }
