@@ -15,6 +15,7 @@ int main(void)
 	{
 		putchar(c1);
 		c1++;
+	}
 
 	while (c2 <= 90)
 	{
