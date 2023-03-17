@@ -11,14 +11,13 @@ int main(void)
 
 	while (i <= 9)
 	{
+		putchar(i + '0');
 		if (i == 9)
 		{
-			putchar(i + '0');
-			fprintf(stderr, "\n");
+			putchar('\n');
 		}
 		else
 		{
-			putchar(i + '0');
 			putchar(',');
 			putchar(' ');
 		}
