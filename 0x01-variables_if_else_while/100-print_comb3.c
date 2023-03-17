@@ -23,11 +23,8 @@ int main(void)
 				putchar(' ');
 				j++;
 			}
-			else
-			{
-				i++;
-			}
 		}
+		i++;
 	}
 	putchar('\n');
 	return (0);
