@@ -13,7 +13,8 @@ int main(void)
 	{
 		if (i == 9)
 		{
-			putchar(i + '0' + '\n');
+			putchar(i + '0');
+			fprintf(stderr, "\n");
 		}
 		else
 		{
