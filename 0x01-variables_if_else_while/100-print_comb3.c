@@ -15,7 +15,11 @@ int main(void)
 
 		while (j < 10)
 		{
-			if (i != 8)
+			if (i == 8 && j == 9)
+			{
+				putchar('\n');
+			}
+			else
 			{
 				putchar(i + '0');
 				putchar(j + '0');
@@ -23,9 +27,8 @@ int main(void)
 				putchar(' ');
 				j++;
 			}
+			i++;
 		}
-		i++;
 	}
-	putchar('\n');
 	return (0);
 }
