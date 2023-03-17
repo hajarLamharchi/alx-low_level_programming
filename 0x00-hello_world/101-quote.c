@@ -9,11 +9,9 @@
 
 int main(void)
 {
-	char s1[100], s2[100];
+	char s1[] = "and that piece of art is useful\" ";
+	char s2[] = "- Dora Korpar, 2015-10-19\n";
 
-	s1 = "and that piece of art is useful\" ";
-	s2 = "- Dora Korpar, 2015-10-19\n";
-	strcat(s1, s2);
-	fprintf(stderr, "%s", s1);
+	fprintf(stderr, "%s%s", s1, s2);
 	return (1);
 }
