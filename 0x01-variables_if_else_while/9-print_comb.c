@@ -13,6 +13,7 @@ int main(void)
 	while (i < 10)
 	{
 		putchar(i + '0');
+		i++;
 		while (j < 10)
 		{
 			putchar(j + '0');
@@ -20,7 +21,6 @@ int main(void)
 			putchar(' ');
 			j++;
 		}
-		i++;
 	}
 	return (0);
 }
