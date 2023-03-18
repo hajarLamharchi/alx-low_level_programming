@@ -18,7 +18,7 @@ int main(void)
 				l = 0;
 				while (l <= 9)
 				{
-					if (l == 0 && k == 0 && j == 0 && i == 0)
+					if (l == 0 && k == 0)
 						continue;
 					else if (i != 9 && j != 8)
 					{
