@@ -18,8 +18,8 @@ int main(void)
 				l = 0;
 				while (l <= 9)
 				{
-					if (l == 0 && k == 0)
-						l = j;
+					if (l == 0 && k == 0 && j == 0 && i == 0)
+						break;
 					else if (i != 9 && j != 8)
 					{
 						putchar(i + '0');
