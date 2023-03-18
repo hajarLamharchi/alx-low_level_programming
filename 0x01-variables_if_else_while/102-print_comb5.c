@@ -7,11 +7,12 @@
 
 int main(void)
 {
-	int i, j;
+	int i = 0;
+	int j = i + 1;
 
-	for (i = 0 ; i <= 98 ; i++)
+	while (i <= 98)
 	{
-		for (j = i + 1 ; j <= 99 ; j++)
+		while (j <= 99)
 		{
 			if (i != 98)
 			{
@@ -23,7 +24,9 @@ int main(void)
 				putchar(',');
 				putchar(' ');
 			}
+			j++;
 		}
+		i++;
 	}
 	putchar('\n');
 	return (0);
