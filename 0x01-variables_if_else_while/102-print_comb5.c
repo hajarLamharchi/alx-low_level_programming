@@ -19,7 +19,7 @@ int main(void)
 				while (l <= 9)
 				{
 					if (l == 0 && k == 0 && j == 0 && i == 0)
-						break;
+						l = 1;
 					else if (i != 9 && j != 8)
 					{
 						putchar(i + '0');
