@@ -8,10 +8,11 @@
 int main(void)
 {
 	int i = 0;
-	int j = i + 1;
+	int j = 0;
 
 	while (i <= 98)
 	{
+		j = i + 1;
 		while (j <= 99)
 		{
 			if (i != 98 && j != 99)
