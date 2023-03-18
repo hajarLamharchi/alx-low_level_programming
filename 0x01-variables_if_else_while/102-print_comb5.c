@@ -15,8 +15,7 @@ int main(void)
 		{
 			for (k = i ; k <= 9 ; k++)
 			{
-				l = j + 1;
-				for (l = 0 ; l <= 9 ; l++)
+				for (l = 1 ; l <= 9 ; l++)
 				{
 					if (i != 9 && j != 8)
 					{
@@ -27,6 +26,7 @@ int main(void)
 						putchar(l + '0');
 						putchar(',');
 						putchar(' ');
+						l = 0;
 					}
 				}
 			}
