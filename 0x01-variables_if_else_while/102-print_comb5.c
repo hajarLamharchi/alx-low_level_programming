@@ -28,8 +28,8 @@ int main(void)
 						putchar(' ');
 					}
 				}
-				l = j + 1;
 			}
+			l = j + 1;
 		}
 	}
 	putchar('\n');
