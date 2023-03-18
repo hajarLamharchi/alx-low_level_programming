@@ -11,7 +11,6 @@ int main(void)
 
 	for (i = 0 ; i <= 9 ; i++)
 	{
-		l = j + 1;
 		for (j = 0 ; j <= 8 ; j++)
 		{
 			for (k = i ; k <= 9 ; k++)
@@ -29,6 +28,7 @@ int main(void)
 						putchar(' ');
 					}
 				}
+				l = j + 1;
 			}
 		}
 	}
