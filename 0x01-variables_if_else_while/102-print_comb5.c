@@ -15,9 +15,9 @@ int main(void)
 		{
 			for (k = i ; k <= 9 ; k++)
 			{
-				for (l = 1 ; l <= 9 ; l++)
+				for (l = 0 ; l <= 9 ; l++)
 				{
-					if (k == 9)
+					if (l == 0)
 						l = j + 1;
 					else if (i != 9 && j != 8)
 					{
