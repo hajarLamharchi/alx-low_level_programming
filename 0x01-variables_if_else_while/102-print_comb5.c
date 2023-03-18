@@ -27,7 +27,7 @@ int main(void)
 						putchar(',');
 						putchar(' ');
 					}
-					else if (l = 9)
+					else if (l == 9)
 						l = 0;
 				}
 			}
