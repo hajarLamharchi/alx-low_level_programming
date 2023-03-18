@@ -15,10 +15,11 @@ int main(void)
 		{
 			for (k = i ; k <= 9 ; k++)
 			{
-				for (l = 0 ; l <= 9 ; l++)
+				l = 0;
+				while (l <= 9)
 				{
 					if (l == 0 && k == 0)
-						l = 1;
+						l++;
 					else if (i != 9 && j != 8)
 					{
 						putchar(i + '0');
@@ -29,6 +30,7 @@ int main(void)
 						putchar(',');
 						putchar(' ');
 					}
+					l++;
 				}
 			}
 		}
