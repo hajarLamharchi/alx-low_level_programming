@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 /**
  * jack_bauer - prints the munites of a whole day
  *
@@ -12,10 +13,10 @@ void jack_bauer(void)
 	for (i = 0; i < 23; i++)
 		for (j = 0; j < 60 ; j++)
 		{
-			_putchar(i);
-			_putchar(':');
-			_putchar(j);
-			_putchar('\n');
+			putchar(i + '0');
+			putchar(':');
+			putchar(j + '0');
+			putchar('\n');
 		}
 }
 
