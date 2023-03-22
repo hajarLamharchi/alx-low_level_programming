@@ -16,9 +16,9 @@ int main(void)
 	{
 		if (i % 2 == 0)
 		{
-			t[i] = t[i - 1] + t[i - 2];
 			sum = sum + t[i];
 		}
+		t[i] = t[i - 1] + t[i - 2];
 		i++;
 	}
 	printf("%lu\n", sum);
