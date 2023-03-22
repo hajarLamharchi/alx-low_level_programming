@@ -13,20 +13,14 @@ int main(void)
 	t[0] = 1;
 	t[1] = 2;
 	printf("1, 2, ");
-	while (i < 50)
+	while (i < 49)
 	{
-		if (i == 49)
-		{
-			printf("%lu", t[i]);
-		}
-		else
-		{
 		t[i] = t[i - 1] + t[i - 2];
 		printf("%lu, ", t[i]);
 		i++;
-		}
 	}
-	printf("\n");
+
+	printf("%lu\n", t[49] + t[48]);
 	return (0);
 }
 
