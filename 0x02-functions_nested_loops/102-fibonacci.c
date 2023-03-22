@@ -20,7 +20,7 @@ int main(void)
 		i++;
 	}
 
-	printf("%lu\n", t[49] + t[48]);
+	printf("%lu\n", t[48] + t[47]);
 	return (0);
 }
 
