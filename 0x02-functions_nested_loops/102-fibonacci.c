@@ -22,8 +22,9 @@ int main(void)
 		i++;
 		}
 		else
-			printf("%lu\n", t[i]);
+			printf("%lu", t[i]);
 	}
+	printf("\n");
 	return (0);
 }
 
