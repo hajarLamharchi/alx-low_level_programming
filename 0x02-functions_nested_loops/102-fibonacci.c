@@ -19,6 +19,7 @@ int main(void)
 		printf("%d, ", t[i]);
 		i++;
 	}
+	printf("\n");
 	return (0);
 }
 
