@@ -17,6 +17,7 @@ int main(void)
 	{
 		t[i] = t[i - 1] + t[i - 2];
 		printf("%d, ", t[i]);
+		i++;
 	}
 	return (0);
 }
