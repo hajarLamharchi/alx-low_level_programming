@@ -23,6 +23,7 @@ int main(void)
 		}
 		else
 			printf("%lu", t[i]);
+		break;
 	}
 	printf("\n");
 	return (0);
