@@ -8,7 +8,7 @@
 int main(void)
 {
 	int i = 2;
-	int t[50];
+	unsigned long t[50];
 
 	t[0] = 1;
 	t[1] = 2;
@@ -16,7 +16,7 @@ int main(void)
 	while (i < 50)
 	{
 		t[i] = t[i - 1] + t[i - 2];
-		printf("%d, ", t[i]);
+		printf("%lu, ", t[i]);
 		i++;
 	}
 	printf("\n");
