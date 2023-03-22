@@ -15,15 +15,16 @@ int main(void)
 	printf("1, 2, ");
 	while (i < 50)
 	{
-		if (i != 49)
+		if (i == 49)
+		{
+			printf("%lu", t[i]);
+		}
+		else
 		{
 		t[i] = t[i - 1] + t[i - 2];
 		printf("%lu, ", t[i]);
 		i++;
 		}
-		else
-			printf("%lu", t[i]);
-		break;
 	}
 	printf("\n");
 	return (0);
