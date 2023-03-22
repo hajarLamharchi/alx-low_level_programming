@@ -8,11 +8,11 @@ int main(void)
 {
 	int i = 2;
 	unsigned long sum = 1;
-	unsigned long t[];
+	unsigned long t[40];
 
 	t[0] = 1;
 	t[1] = 2;
-	while(t[i] < 4000000)
+	while (t[i] < 4000000)
 	{
 		t[i] = t[i - 1] + t[i - 2];
 		if (i % 2 == 0)
