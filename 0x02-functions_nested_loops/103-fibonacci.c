@@ -8,7 +8,7 @@ int main(void)
 {
 	int i = 2;
 	unsigned long sum = 1;
-	unsigned long t[40];
+	unsigned long t[50];
 
 	t[0] = 1;
 	t[1] = 2;
@@ -17,6 +17,7 @@ int main(void)
 		t[i] = t[i - 1] + t[i - 2];
 		if (i % 2 == 0)
 			sum = sum + t[i];
+		i++;
 	}
 	printf("%lu\n", sum);
 	return (0);
