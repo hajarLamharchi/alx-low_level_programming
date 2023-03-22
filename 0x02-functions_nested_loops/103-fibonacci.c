@@ -14,9 +14,9 @@ int main(void)
 	t[1] = 2;
 	while (t[i] < 4000000)
 	{
-		t[i] = t[i - 1] + t[i - 2];
 		if (i % 2 == 0)
 		{
+			t[i] = t[i - 1] + t[i - 2];
 			sum = sum + t[i];
 		}
 		i++;
