@@ -6,20 +6,20 @@
  */
 int main(void)
 {
-	int i = 2;
-	unsigned long sum = 1;
-	unsigned long t[100];
+	unsigned long sum = 0;
+	unsigned long x = 1;
+	unsigned long y = 2;
+	unsigned long z = 0;
 
-	t[0] = 1;
-	t[1] = 2;
-	while (t[i] < 4000000)
+	while (z < 4000000)
 	{
-		if (i % 2 == 0)
+		if (y % 2 == 0)
 		{
-			sum = sum + t[i];
+			sum = sum + y;
 		}
-		t[i] = t[i - 1] + t[i - 2];
-		i++;
+		z = x + y;
+		x = y;
+		y = z;
 	}
 	printf("%lu\n", sum);
 	return (0);
