@@ -18,8 +18,8 @@ int main(void)
 		x = y;
 		y = z;
 		count++;
-		printf("%0Lf, ", z);
+		printf("%0d, ", z);
 	}
-	printf("%0Lf\n", x + y);
+	printf("%0d\n", x + y);
 	return (0);
 }
