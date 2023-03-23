@@ -16,20 +16,36 @@ void print_times_table(int n)
 
 		for (i = 0 ; i <= n ; i++)
 		{
-			t = i * j;
 			for (j = 0 ; j <= n ; j++)
 			{
-
-			if (j != 0 && t < 10)
-				printf(",   %d", t);
-			else if (j != 0 && t >= 10 && t < 100)
-				printf(",  %d", t);
-			else if (j != 0 && t >= 100)
-				printf(", %d", t);
-			else if (j == 0)
-				printf("%d", t);
+				t = i * j;
+				if (t > 99)
+				{
+					_putchar(t / 100 + '0');
+					_putchar(t / 10 % 10 + '0');
+					_putchar(t % 10 + '0');
+				}
+				else if (t > 9)
+				{
+					_putchar(' ');
+					_putchar(t / 10 + '0');
+					_putchar(t % 10 + '0');
+				}
+				else if (j != 0)
+				{
+					_putchar(' ');
+					_putchar(' ');
+					_putchar(t + '0');
+				}
+				else
+					_putchar(t + '0');
+				if (j != n)
+				{
+					_putchar(',');
+					_putchar(' ');
+				}
 			}
+			_putchar('\n');
 		}
-		printf("\n");
 	}
 }
