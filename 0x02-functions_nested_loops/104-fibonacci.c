@@ -9,7 +9,7 @@ int main(void)
 {
 	int count = 3;
 
-	unsigned double x = 1, y = 2, z = 0;
+	unsigned long int x = 1, y = 2, z = 0;
 
 	printf("1, 2, ");
 	while (count < 98)
@@ -18,8 +18,8 @@ int main(void)
 		x = y;
 		y = z;
 		count++;
-		printf("%0d, ", z);
+		printf("%lu, ", z);
 	}
-	printf("%0d\n", x + y);
+	printf("%lu\n", x + y);
 	return (0);
 }
