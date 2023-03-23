@@ -8,7 +8,8 @@
 int main(void)
 {
 	int count = 3;
-	long double x = 1, y = 2, z = 0;
+
+	unsigned double x = 1, y = 2, z = 0;
 
 	printf("1, 2, ");
 	while (count < 98)
@@ -17,8 +18,8 @@ int main(void)
 		x = y;
 		y = z;
 		count++;
-		printf("%Lf, ", z);
+		printf("%0Lf, ", z);
 	}
-	printf("%Lf\n", x + y);
+	printf("%0Lf\n", x + y);
 	return (0);
 }
