@@ -20,7 +20,7 @@ int _atoi(char *s)
 	}
 	for (j = 0; j < len ; j++)
 	{
-		if (s[j] >= '0' && s[j] <= '9')
+		if (s[j] >= 48 && s[j] <= 57)
 		{
 			n = n * 10 + s[j];
 		}
