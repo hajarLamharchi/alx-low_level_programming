@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 /**
  * cap_string - capitalizes all words of the string
  * @s: input string
@@ -24,7 +25,10 @@ char *cap_string(char *s)
 				s[i] == '{' ||
 				s[i] == '}')
 		{
-			s[i + 1] -= 32;
+			if (s[i + 1] >= 97 && s[i + 1] <= 122)
+			{
+				s[i + 1] -= 32;
+			}
 		}
 	}
 	return (s);
