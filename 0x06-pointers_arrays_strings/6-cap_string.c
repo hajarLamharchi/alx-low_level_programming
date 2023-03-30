@@ -31,5 +31,6 @@ char *cap_string(char *s)
 			}
 		}
 	}
+	s[0] -= 32;
 	return (s);
 }
