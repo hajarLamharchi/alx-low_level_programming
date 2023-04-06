@@ -12,4 +12,5 @@ int wildcmp(char *s1, char *s2);
 int _putchar(char c);
 int wildcmp(char *s1, char *s2);
 int function(int n, int i);
+int function1(char *s, int i, int len);
 #endif
