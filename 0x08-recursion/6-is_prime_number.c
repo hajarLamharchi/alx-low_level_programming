@@ -7,37 +7,16 @@
 
 int is_prime_number(int n)
 {
+	int i = 1;
+	
 	if (n == 0 || n == 1 || n < 0)
 	{
 		return (0);
 	}
-	else
+	n = is_prime_number(n % i++);
+	if (i > 3)
 	{
-	return (check(n, n / 2));
+		return (0);
 	}
-}
-
-/**
- * check - check in f is prime
- * @n: first input
- * @i: second input
- * Return: 1 if true 0 if false
- */
-int check(int n, int i)
-{
-	if (i == 1)
-	{
-		return (1);
-	}
-	else
-	{
-		if (n % i == 0)
-		{
-			return (0);
-		}
-		else
-		{
-			return (check(n, i - 1));
-		}
-	}
+	return (1);
 }
