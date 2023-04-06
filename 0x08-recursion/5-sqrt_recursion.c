@@ -7,21 +7,28 @@
  */
 int _sqrt_recursion(int n)
 {
-	int i = -1;
+	return (function(n, 1));
+}
 
+/**
+ * function - help with finding the sqrt
+ * @n: input value
+ * @i: input value
+ * Return: integer
+ */
+int function(int n, int i)
+{
 	if (n < 0)
 	{
 		return (-1);
 	}
 	else if (n == 0)
 	{
-		return (0);
+		return ((i - 1) / 2);
 	}
-	else if (n == 1)
+	else
 	{
-		return (1);
+		return (function(n - i, i + 2));
 	}
-	i = i + 2;
-	_sqrt_recursion(n - i);
-	return ((i - 1) / 2);
+	return (0);
 }
