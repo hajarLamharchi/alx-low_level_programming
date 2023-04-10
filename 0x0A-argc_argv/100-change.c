@@ -9,7 +9,7 @@
 int main(int argc, char *argv[])
 {
 	int i = 0;
-	int change[] = {25, 10, 5, 2};
+	int change[] = {25, 10, 5, 2, 1};
 	int n = 0;
 	int cent;
 
@@ -35,7 +35,7 @@ int main(int argc, char *argv[])
 			else
 			{
 				n++;
-				cent = cent / change[i];
+				cent = cent - change[i];
 			}
 		}
 		printf("%d\n", n);
