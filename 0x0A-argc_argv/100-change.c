@@ -8,8 +8,6 @@
  */
 int main(int argc, char *argv[])
 {
-	int i = 0;
-	int change[] = {25, 10, 5, 2, 1};
 	int n = 0;
 	int cent;
 
@@ -26,16 +24,32 @@ int main(int argc, char *argv[])
 	}
 	else
 	{
-		while (cent % change[i] == 0)
+		while (cent != 0)
 		{
-			if (cent % change[i] != 0)
+			if (cent >= 25)
 			{
-				i++;
-			}
-			else
-			{
+				cent -= 25;
 				n++;
-				cent = cent - change[i];
+			}
+			else if (cent < 25 && cent >= 10)
+			{
+				cent -= 10;
+				n++;
+			}
+			else if (cent < 10 && cent >= 5)
+			{
+				cent -= 5;
+				n++;
+			}
+			else if (cent < 5 && cent >= 2)
+			{
+				cent -= 2;
+				n++;
+			}
+			else if (cent < 2 && cent >= 1)
+			{
+				cent -= 1;
+				n++;
 			}
 		}
 		printf("%d\n", n);
