@@ -35,6 +35,7 @@ int main(int argc, char *argv[])
 			else
 			{
 				n++;
+				cent = cent / change[i];
 			}
 		}
 		printf("%d\n", n);
