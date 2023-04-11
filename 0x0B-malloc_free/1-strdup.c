@@ -9,20 +9,22 @@
 char *_strdup(char *str)
 {
 	unsigned long int i;
+	unsigned long int size;
 	char *ptr;
 
-	ptr = malloc(sizeof((int *)(str)));
+	size = sizeof((unsigned long int *)(str));
+	ptr = malloc(size);
 	if (str == NULL || ptr == NULL)
 	{
 		return (NULL);
 	}
-	else if (sizeof((int *)(str)) != sizeof((int *)(ptr)))
+	else if (size != sizeof((unsigned long int *)(ptr)))
 	{
 		return (NULL);
 	}
 	else
 	{
-		for (i = 0; i < sizeof((int *)(str)); i++)
+		for (i = 0; i < size; i++)
 		{
 			*(ptr + i) = *(str + i);
 		}
