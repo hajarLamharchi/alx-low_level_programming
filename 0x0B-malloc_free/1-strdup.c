@@ -8,11 +8,15 @@
  */
 char *_strdup(char *str)
 {
-	long unsigned int i;
+	unsigned long int i;
 	char *ptr;
 
 	ptr = malloc(sizeof((int *)(str)));
-	if (str == NULL)
+	if (str == NULL || ptr == NULL)
+	{
+		return (NULL);
+	}
+	else if (sizeof((int *)(str)) > sizeof((int *)(ptr)))
 	{
 		return (NULL);
 	}
