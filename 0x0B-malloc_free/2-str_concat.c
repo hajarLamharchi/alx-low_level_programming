@@ -18,11 +18,11 @@ char *str_concat(char *s1, char *s2)
 	ptr = malloc(sizeof(char) * (size1 + size2 + 1));
 	if (s1 == NULL)
 	{
-		*s1 = ' ';
+		*s1 = '\0';
 	}
 	if (s2 == NULL)
 	{
-		*s2 = ' ';
+		*s2 = '\0';
 	}
 	if (ptr == NULL)
 	{
