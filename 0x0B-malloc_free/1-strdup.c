@@ -16,7 +16,7 @@ char *_strdup(char *str)
 	{
 		return (NULL);
 	}
-	else if (sizeof((int *)(str)) > sizeof((int *)(ptr)))
+	else if (sizeof((int *)(str)) != sizeof((int *)(ptr)))
 	{
 		return (NULL);
 	}
