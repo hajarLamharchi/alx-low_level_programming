@@ -13,30 +13,33 @@ char *str_concat(char *s1, char *s2)
 	char *ptr;
 	int i;
 
-	size1 = strlen(s1);
-	size2 = strlen(s2);
-	ptr = malloc(sizeof(char) * (size1 + size2 + 1));
 	if (s1 == NULL)
 	{
-		s1[] = "";
+		*s1 = ' ';
 	}
 	if (s2 == NULL)
 	{
-		s2[] = "";
+		*s2 = ' ';
 	}
+	size1 = strlen(s1);
+	size2 = strlen(s2);
+	ptr = malloc(sizeof(char) * (size1 + size2 + 1));
 	if (ptr == NULL)
 	{
 		return (NULL);
 	}
-	for (i = 0; i <= size1 + size2; i++)
+	else
 	{
-		if (i < size1)
+		for (i = 0; i <= size1 + size2; i++)
 		{
-			*(ptr + i) = *(s1 + i);
-		}
-		else
-		{
-			*(ptr + i) = *(s2 + i - size1);
+			if (i < size1)
+			{
+				*(ptr + i) = *(s1 + i);
+			}
+			else
+			{
+				*(ptr + i) = *(s2 + i - size1);
+			}
 		}
 	}
 	return (ptr);
