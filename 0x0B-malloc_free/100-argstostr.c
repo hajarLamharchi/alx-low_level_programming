@@ -26,16 +26,13 @@ char *argstostr(int ac, char **av)
 	}
 	for (i = 0; i < ac; i++)
 	{
-		ptr[i] = malloc(sizeof(char *) * strlen(ptr[i]));
+		ptr[i] = malloc(sizeof(char *) * strlen(av[i]));
 		if (ptr[i] == NULL)
 		{
-			for (; i >= 0; i--)
-			{
-				free(ptr[i]);
-			}
-			free(ptr);
-			return (NULL);
+			free(ptr[i]);
 		}
+		free(ptr);
+		return (NULL);
 	}
 	for (j = 0; j < ac; j++)
 	{
