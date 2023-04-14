@@ -13,7 +13,7 @@ int main(int argc, char *argv[])
 {
 	unsigned long int *mul, num1, num2;
 	unsigned long int len, len1, len2;
-	int i, j;
+	int i, j, test = 0;
 
 	num1 = *argv[1];
 	num2 = *argv[2];
@@ -28,15 +28,23 @@ int main(int argc, char *argv[])
 		{
 			if (!(isdigit(*argv[j])))
 			{
-				printf("Error\n");
-				exit(98);
+				test = 1;
 			}
 		}
+	}
+	if (test == 1)
+	{
+		printf("Error\n");
+		exit(98);
 	}
 	len1 = strlen((char *)num1);
 	len2 = strlen((char *)num2);
 	len = len1 + len2 + 1;
 	mul = malloc(sizeof(int) * len);
+	if (mul == NULL)
+	{
+		return (1);
+	}
 	*mul = num1 * num2;
 	printf("%lu\n", *mul);
 	return (0);
