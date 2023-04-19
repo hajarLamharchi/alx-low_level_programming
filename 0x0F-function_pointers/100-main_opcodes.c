@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 /**
- * main - prints the operation code 
+ * main - prints the operation code
  * @argc: arguments count
  * @argv: arguments vector
  * Return: Always 0
