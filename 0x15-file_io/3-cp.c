@@ -32,7 +32,7 @@ int main(int ac, char *av[])
 		free(buf_from);
 		exit(98);
 	}
-	w = write(fd_to, buf_from, len_from);
+	w = write(fd_to, buf_from, 1024);
 	if (fd_to == -1 || w == -1)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", buf_to);
