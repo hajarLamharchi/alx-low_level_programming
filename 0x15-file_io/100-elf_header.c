@@ -226,7 +226,7 @@ void print_entry(Elf64_Ehdr h)
 int main(int ac, char **av)
 {
 	int fd;
-	Elf64_Ehdr h;
+	Elf64_Ehdr *h = malloc(sizeof(Elf64_Ehdr));
 
 	if (ac != 2)
 	{
@@ -239,8 +239,8 @@ int main(int ac, char **av)
 		dprintf(STDERR_FILENO, "Can't open file %s\n", av[1]);
 		exit(98);
 	}
-	if (h.e_ident[0] == 0x7f && h.e_ident[1] == 'E' && h.e_ident[2] == 'L'
-			&& h.e_ident[3] == 'F')
+	if (h->e_ident[0] == 0x7f && h->e_ident[1] == 'E' && h->e_ident[2] == 'L'
+			&& h->e_ident[3] == 'F')
 	{
 		printf("ELF Header:\n");
 	}
@@ -249,14 +249,14 @@ int main(int ac, char **av)
 		dprintf(STDERR_FILENO, "Not ELF file: %s\n", av[1]);
 		exit(98);
 	}
-	print_magic(h);
-	print_class(h);
-	print_data(h);
-	print_version(h);
-	print_osabi(h);
-	print_abiversion(h);
-	print_type(h);
-	print_entry(h);
+	print_magic(*h);
+	print_class(*h);
+	print_data(*h);
+	print_version(*h);
+	print_osabi(*h);
+	print_abiversion(*h);
+	print_type(*h);
+	print_entry(*h);
 	if (close(fd))
 	{
 		 dprintf(STDERR_FILENO, "ERROR: closing file\n");
