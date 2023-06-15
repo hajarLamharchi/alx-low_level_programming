@@ -1,1 +1,1 @@
-# 0x17-doubly_linked_lists
+# 0x17_doubly_linked_lists
