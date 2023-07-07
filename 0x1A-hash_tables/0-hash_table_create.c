@@ -19,7 +19,7 @@ hash_table_t *hash_table_create(unsigned long int size)
 	if (tab->array == NULL)
 		return (NULL);
 
-	for ( i = 0; i < size; i++)
+	for (i = 0; i < size; i++)
 		tab->array[i] = NULL;
 	return (tab);
 }
