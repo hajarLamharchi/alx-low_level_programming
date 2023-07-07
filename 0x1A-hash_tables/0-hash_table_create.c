@@ -17,7 +17,6 @@ hash_table_t *hash_table_create(unsigned long int size)
 	tab->array = calloc(sizeof(hash_node_t *) * size, tab->size);
 	if (!tab->array)
 	{
-		free(tab);
 		return (NULL);
 	}
 	return (tab);
