@@ -13,13 +13,11 @@ $(NAME): $(OBJ)
 	$(CC) -c $< -o $@
 
 clean:
-	-$(RM) $(SRC) $(NAME)
+	-$(RM) *~* $(NAME)
 
 oclean:
 	-$(RM) $(OBJ)
 
-fclean:
-	-$(RM) $(SRC) $(NAME) $(OBJ)
+fclean: clean oclean
 
-re:
-	-touch $(SRC)
+re: fclean all
