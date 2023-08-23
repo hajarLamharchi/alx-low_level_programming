@@ -10,18 +10,16 @@ all: $(NAME)
 $(NAME): $(OBJ)
 	$(CC) $(CFLAGS) -o $@ $(OBJ)
 
-main.o: main.c
-
-school.o: school.c
-
 clean:
-	-$(RM) $(SRC) $(NAME)
+	-$(RM) *~* $(NAME)
 
 oclean:
 	-$(RM) $(OBJ)
 
-fclean:
-	-$(RM) $(SRC) $(NAME) $(OBJ)
+fclean: clean oclean
 
-re:
-	-touch $(SRC)
+re: fclean all
+
+ifeq ("$(wildcard m.h)","")
+	$(error)
+endif
